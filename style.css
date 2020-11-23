@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+
+body {
+    height: 100vh;
+    background: linear-gradient( to right top,
+        #ee9ca7,
+        #ffdde1
+    );
+    font-family: "B612" , sans-serif;
+    color: #333;;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+}
+
+select {
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.logo {
+    margin: auto;
+}
+
+.one,
+.two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.current_rate {
+    margin-top: 20px;
+    padding-left: 30px; 
+}
+
+.current_rate div {
+    font-size: 16px;
+}
+
+.current_rate span {
+    font-size: 36px;
+}
+
+.amount_one,
+.amount_two {
+    color: #202124;
+    font-size: 1em;
+    line-height: 28px;
+    padding: 0 0 0 12px;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none solid rgb(32, 33, 36);
+
+}
+
+.swap {
+    margin: auto;
+}
+
+.fa-retweet {
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
+    width: 120px;
+    outline: none;
+    background-color: #ee9ca7;
+    color: #ffdde1;
+    cursor: pointer;
+} 
+
+.fa-retweet:hover {
+    color: #ee9ca7;
+    background-color: #ffdde1;
+    transform: scale(1.5);
+}
+
+.amount_one,
+.amount_two {
+    height: 4rem;
+    width: 200px;
+    margin: 40px;
+    text-align: left;
+    padding: 0 0 0 20px;
+}
+
+.currency_one,
+.currency_two {
+    border-radius: 20px;
+    width: 300px;
+    height: 4rem;
+    text-align: left;
+    padding: 0 0 0 15px;
+}
+
+.latest_rates {
+    padding: 25px;
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+}
+
+.latest_rates p {
+    margin-top: 10px ;
+    text-align: right;
+}
+table {
+    border-bottom: 2px solid red;
+    width: 100px;
+    margin: auto;
+    padding: 20px;
+    font-size: 18px; 
+}
+
+.footer {
+    text-align: right;
+}
+
+.footer a:not(:first-child) {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    .amount_one,
+    .amount_two {
+    width: 150px;
+    margin: 20px;
+}
+
+.currency_one,
+.currency_two {
+    width: 225px;
+}
+
+}
